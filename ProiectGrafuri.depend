@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1491242068 source:c:\users\c\desktop\informatica\proiectgrafuri\graph.c
+	"Graph.h"
+	"Util.h"
+	<stdlib.h>
+	<string.h>
+
+1491242068 c:\users\c\desktop\informatica\proiectgrafuri\graph.h
+
+1491247226 c:\users\c\desktop\informatica\proiectgrafuri\util.h
+	<stdio.h>
+
+1491249554 source:c:\users\c\desktop\informatica\proiectgrafuri\main.c
+	"Algorithms.h"
+	"Graph.h"
+	"List.h"
+	"Util.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1491242068 source:c:\users\c\desktop\informatica\proiectgrafuri\util.c
+	"Util.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1491239754 source:c:\users\c\desktop\informatica\proiectgrafuri\queue.c
+	"Queue.h"
+	<stdlib.h>
+
+1491239725 c:\users\c\desktop\informatica\proiectgrafuri\queue.h
+
+1491246338 source:c:\users\c\desktop\informatica\proiectgrafuri\algorithms.c
+	"Algorithms.h"
+	"Graph.h"
+	"List.h"
+	"Queue.h"
+	"Util.h"
+	<stdlib.h>
+	<stdio.h>
+
+1491246300 c:\users\c\desktop\informatica\proiectgrafuri\algorithms.h
+	"Graph.h"
+	"List.h"
+
+1491246228 source:c:\users\c\desktop\informatica\proiectgrafuri\list.c
+	"List.h"
+	<stdlib.h>
+
+1491245986 c:\users\c\desktop\informatica\proiectgrafuri\list.h
+
