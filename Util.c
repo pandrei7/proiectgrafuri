@@ -37,12 +37,12 @@ float* FloatVector(int size, float init_value)
     return vec;
 }
 
-int Smaller(float a, float b)
-{
-    return (a - b < -EPSILON);
-}
-
 int Equal(float a, float b)
 {
     return (fabs(a - b) < EPSILON);
+}
+
+int Smaller(float a, float b)
+{
+    return (a < b) && !Equal(a, b);
 }

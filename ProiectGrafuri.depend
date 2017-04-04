@@ -51,3 +51,54 @@
 
 1491245986 c:\users\c\desktop\informatica\proiectgrafuri\list.h
 
+1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\main.c
+	"Algorithms.h"
+	"Graph.h"
+	"List.h"
+	"Util.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1491335600 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.h
+	"Graph.h"
+	"List.h"
+
+1491337124 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.h
+
+1491319272 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.h
+
+1491335115 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.h
+	<stdio.h>
+
+1491336515 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.c
+	"Algorithms.h"
+	"Graph.h"
+	"List.h"
+	"Queue.h"
+	"Util.h"
+	<stdlib.h>
+
+1491319272 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.h
+
+1491337513 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.c
+	"Graph.h"
+	"Util.h"
+	<stdlib.h>
+	<string.h>
+
+1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.c
+	"List.h"
+	<stdlib.h>
+
+1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.c
+	"Queue.h"
+	<stdlib.h>
+
+1491325944 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.c
+	"Util.h"
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
