@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /* Limita pentru lungimea unui sir de caractere */
-#define STRING_LIMIT 5000
+#define STRING_LIMIT 500
 
 /* O constanta foarte mare */
 #define INFINITE (1 << 30)

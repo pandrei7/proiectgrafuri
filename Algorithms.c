@@ -2,6 +2,7 @@
 #include "Graph.h"
 #include "List.h"
 #include "Queue.h"
+#include "Transaction.h"
 #include "Util.h"
 #include <stdlib.h>
 
@@ -75,8 +76,87 @@ ListNode* FindNegativeCycle(GraphNode *graph, int nodes, int start)
        in coada se gasesc inca elemente. De aceea, ea trebuie golita manual. */
     EmptyQueue(&queue);
 
-    if (!has_negative_cycle) {
+    /* Pointerul la vectorul ce va reprezenta rezultatul */
+    ListNode *res = NULL;
+    if (has_negative_cycle) {
+        /* Refac ciclul */
+        res = RetraceCycle(predecessors, costs, nodes, start);
+    }
+
+    /* Eliberez memoria folosita pentru aflarea ciclului */
+    free(costs);
+    free(predecessors);
+    free(times_relaxed);
+
+    return res;
+}
+
+/* Functie care returneaza un vector ce contine gradele de intrare ale
+   nodurilor grafului graph. Numarul de noduri ale grafului este nodes */
+int* GetIndegrees(GraphNode *graph, int nodes)
+{
+    int *indegrees = IntVector(nodes, 0);
+    int i;
+
+    for (i = 0; i < nodes; ++i) {
+        /* Parcurg lista de muchii cu originea in i si actualizez gradul
+           varfului muchiei */
+        EdgeListNode *it = graph[i].edges;
+        while (it != NULL) {
+            ++indegrees[it->node];
+            it = it->next;
+        }
+    }
+    return indegrees;
+}
+
+#include <stdio.h>
+
+TransactionListNode* TopoSort(GraphNode *graph, int nodes)
+{
+    int *indegrees = GetIndegrees(graph, nodes);
+    Queue queue = (Queue){NULL, NULL};
+
+    int i, node;
+    for (i = 0; i < nodes; ++i) {
+        if (indegrees[i] == 0) {
+            AddToQueue(&queue, i);
+        }
+    }
+
+    TransactionListNode *list = NULL;
+    while (queue.left != NULL) {
+        node = PopQueue(&queue);
+        EdgeListNode *it = graph[node].edges;
+
+        printf("%d\n", node + 1);
+
+        while (it != NULL) {
+            --indegrees[it->node];
+            AddTransaction(&list, (Transaction){node, it->node, it->cost});
+
+            if (indegrees[it->node] == 0) {
+                AddToQueue(&queue, it->node);
+            }
+            it = it->next;
+        }
+    }
+
+    char acyclic = 1;
+    for (i = 0; i < nodes && acyclic == 1; ++i) {
+        if (indegrees[i] > 0) {
+            acyclic = 0;
+        }
+    }
+    free(indegrees);
+
+    if (!acyclic) {
+        if (list != NULL) {
+            FreeTransactionList(&list);
+        }
         return NULL;
     }
-    return RetraceCycle(predecessors, costs, nodes, start);
+
+    list = ReverseList(list);
+    return list;
 }

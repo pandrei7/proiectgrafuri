@@ -13,6 +13,7 @@ void ReadLine(char *s, int limit, FILE *fin)
 {
     fgets(s, limit, fin);
     s[strcspn(s, "\r\n")] = '\0';
+    printf("read \"%s\"\n", s);
 }
 
 int* IntVector(int size, int init_value)
