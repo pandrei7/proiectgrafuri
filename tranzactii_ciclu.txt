@@ -1,0 +1,10 @@
+4
+Ana
+Maria
+Tarjan
+Dijkstra
+1 2 25.40
+3 4 2.00
+3 1 10
+2 4 3.1
+2 1 40
