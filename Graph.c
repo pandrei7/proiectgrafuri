@@ -40,7 +40,7 @@ void SetNodeName(GraphNode *graph, int node, char *name)
     }
 
     /* Aloc memorie pentru a retine numele intreg */
-    graph[node].name = CreateString(strlen(name));
+    graph[node].name = CreateString(strlen(name) + 1);
     strcpy(graph[node].name, name);
 }
 

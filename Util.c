@@ -6,21 +6,27 @@
 
 char* CreateString(int size)
 {
-    return (char*)malloc(size * sizeof(char));
+    char *aux;
+    do {
+        aux = (char*)malloc(size * sizeof(char));
+    } while (aux == NULL);
+    return aux;
 }
 
 void ReadLine(char *s, int limit, FILE *fin)
 {
     fgets(s, limit, fin);
     s[strcspn(s, "\r\n")] = '\0';
-    printf("read \"%s\"\n", s);
 }
 
 int* IntVector(int size, int init_value)
 {
-    int *vec = (int*)malloc(size * sizeof(int));
-    int i;
+    int *vec;
+    do {
+        vec = (int*)malloc(size * sizeof(int));
+    } while (vec == NULL);
 
+    int i;
     for (i = 0; i < size; ++i) {
         vec[i] = init_value;
     }
@@ -29,9 +35,12 @@ int* IntVector(int size, int init_value)
 
 float* FloatVector(int size, float init_value)
 {
-    float *vec = (float*)malloc(size * sizeof(float));
-    int i;
+    float *vec;
+    do {
+        vec = (float*)malloc(size * sizeof(float));
+    } while (vec == NULL);
 
+    int i;
     for (i = 0; i < size; ++i) {
         vec[i] = init_value;
     }

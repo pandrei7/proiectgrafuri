@@ -110,8 +110,6 @@ int* GetIndegrees(GraphNode *graph, int nodes)
     return indegrees;
 }
 
-#include <stdio.h>
-
 TransactionListNode* TopoSort(GraphNode *graph, int nodes)
 {
     int *indegrees = GetIndegrees(graph, nodes);
@@ -128,8 +126,6 @@ TransactionListNode* TopoSort(GraphNode *graph, int nodes)
     while (queue.left != NULL) {
         node = PopQueue(&queue);
         EdgeListNode *it = graph[node].edges;
-
-        printf("%d\n", node + 1);
 
         while (it != NULL) {
             --indegrees[it->node];

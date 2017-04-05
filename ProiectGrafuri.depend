@@ -54,51 +54,54 @@
 
 1491412070 c:\users\c\desktop\informatica\proiectgrafuri\list.h
 
-1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\main.c
+1491434152 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\main.c
 	"Algorithms.h"
 	"Graph.h"
 	"List.h"
+	"Transaction.h"
 	"Util.h"
 	<math.h>
 	<stdio.h>
 	<stdlib.h>
 
-1491335600 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.h
+1491426480 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.h
 	"Graph.h"
 	"List.h"
+	"Transaction.h"
 
-1491337124 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.h
+1491426480 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.h
 
-1491319272 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.h
+1491426480 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.h
 
-1491335115 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.h
+1491426658 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.h
 	<stdio.h>
 
-1491336515 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.c
+1491427013 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\algorithms.c
 	"Algorithms.h"
 	"Graph.h"
 	"List.h"
 	"Queue.h"
+	"Transaction.h"
 	"Util.h"
 	<stdlib.h>
 
-1491319272 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.h
+1491426480 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.h
 
-1491337513 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.c
+1491433899 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\graph.c
 	"Graph.h"
 	"Util.h"
 	<stdlib.h>
 	<string.h>
 
-1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.c
+1491426480 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\list.c
 	"List.h"
 	<stdlib.h>
 
-1491319272 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.c
+1491426480 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\queue.c
 	"Queue.h"
 	<stdlib.h>
 
-1491325944 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.c
+1491433816 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\util.c
 	"Util.h"
 	<math.h>
 	<stdio.h>
@@ -108,6 +111,12 @@
 1491419903 c:\users\c\desktop\informatica\proiectgrafuri\transaction.h
 
 1491420116 source:c:\users\c\desktop\informatica\proiectgrafuri\transaction.c
+	"Transaction.h"
+	<stdlib.h>
+
+1491426480 c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\transaction.h
+
+1491426480 source:c:\users\cristi\desktop\info\proiectgrafuri\proiectgrafuri\transaction.c
 	"Transaction.h"
 	<stdlib.h>
 
